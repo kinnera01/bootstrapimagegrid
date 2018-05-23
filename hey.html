@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hey.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <body>
+        <div class="container-fluid.bs-docs-container">
+          
+            <div class="row">
+                
+                <div class="col-md-9 col-centered" role="main" id="maindiv">
+                        <div class="bs-docs-section">
+                    <div class="imageicons">
+                        <ul class="imageicons-list" id="icons">
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var data = [{
+                    url: "https://s.cdpn.io/3/kiwi.svg",
+                    text: "kiwi"
+                },
+                {
+                    url: "http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg",
+                    text: "simpson"
+                },
+                {
+                    url: "https://www.gnu.org/graphics/empowered-by-gnu.svg",
+                    text: "GNUgnushfcvdebhnsxncxe5cvbahvzwbhcfghjuifvghyjukiuhygfrcedxdcfghyujiwsxecrb7qnbsvc"
+                },
+                {
+                    url: "http://www.freedos.org/images/logos/fdfish-glossy-plain.svg",
+                    text: "Glossy Fish"
+                },
+                {
+                    url: "http://www.math.harvard.edu/computing/svg/butterfly.png",
+                    text: "Butterfly"
+                },
+                {
+                    url: "https://www.misskatecuttables.com/uploads/shopping_cart/11575/large_elephant-0717.png",
+                    text: "Large Elephant"
+                },
+                {
+                    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/TUX-G2-SVG.svg/610px-TUX-G2-SVG.svg.png",
+                    text: "Penguin"
+                },
+                {
+                    url: "https://openclipart.org/download/299977/Dinosaur4.svg",
+                    text: "Dinosuar"
+                },
+
+                {
+                    url: "http://www.math.harvard.edu/computing/svg/butterfly.png",
+                    text: "Butterfly"
+                },
+                {
+                    url: "https://www.misskatecuttables.com/uploads/shopping_cart/11575/large_elephant-0717.png",
+                    text: "Large Elephant"
+                },
+                {
+                    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/TUX-G2-SVG.svg/610px-TUX-G2-SVG.svg.png",
+                    text: "Penguin"
+                },
+
+            ]
+
+            $(document).ready(function () {
+                data.forEach(function (e) {
+                    var divarea = $(".imageicons-list")
+                    divarea.append(
+                        "<li class='hey'><span aria-hidden='true'><img class='url img-responsive' src=" +
+                        e.url + "></img></span><span class='glyphicon-class'>" + e.text +
+                        "</span></li>")
+                })
+                $(".hey").on("click", function () {
+                    alert($(this).text());
+
+                });
+            })
+        </script>
+    </body>
+
+</html>
