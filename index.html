@@ -21,7 +21,13 @@
         <div class="container.bs-docs-container">
           
             <div class="row">
-                <div class="col-md-12"role="main" id="maindiv">
+                <!-- //6 laptop
+                //5 tablet
+                //4 mobile 
+            hand pointer
+        model(name,icon,text & play button)-->
+                
+                <div class="col-md-8 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-2"role="main" id="maindiv">
                         <div class="bs-docs-section">
                                 <div class="imageicons">
                         <ul class="imageicons-list" id="icons">
@@ -32,6 +38,28 @@
     
             </div>
         </div>
+        	<!-- Modal -->
+	<div id="bestFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog"> 
+      
+              <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-heade	r">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title"><strong>Best Match</strong></h3>
+                </div>
+                <div class="modal-body">
+                  <h2 id="bestFriendName"></h2>
+                  <img id="bestFriendImg" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg" alt=""  height="250" width="250">
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+                </div>
+              </div>
+      
+            </div>
+          </div> 
         <script>
             var data = [{
                     url: "https://s.cdpn.io/3/kiwi.svg",
@@ -114,10 +142,15 @@
                         "</span></li>")
                 })
                 $(".hey").on("click", function () {
-                    alert($(this).text());
-
+                 //   alert($(this).attr('src'));
+                 var imgsrc=$(this).closest("li").find("img.url").attr("src")
+                    //console.log($(this).closest("li").find("img.url").attr("src"));
+                    $("#bestFriendName").text($(this).text());
+	    		 $('#bestFriendImg').attr("src",imgsrc );
+		    	// Show the modal with the best match 
+				$("#bestFriendModal").modal('toggle');
                 });
-            })
+            })  
         </script>
     </body>
 

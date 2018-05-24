@@ -52,6 +52,7 @@ li.hey{
     text-align: center;
     background-color: #f9f9f9;
     border: 1px solid #fff;
+    cursor: pointer;
 }
 .imageicons-list {
     padding-left: 0;
@@ -153,6 +154,9 @@ ul.imageicons-list  {
     margin-left: -5px;
     list-style: none
 } */
+h2#bestFriendName{
+    word-wrap: break-word;
+}
 .col-centered {
     display:inline-block;
     float:none;
@@ -998,6 +1002,19 @@ ul.imageicons-list  {
         margin-left: 0
     }
 }  */
+@media (min-width: 992px) { 
+.imageicons li.hey{
+    width: 15%;
+    font-size: 12px;
+}
+.imageicons {
+    margin-right: 0;
+    margin-left: 0;
+}
+.imageicons {
+    margin: 0 -10px 20px;
+    overflow: hidden;
+} }
 
 @media (min-width: 768px) {
     .imageicons li.hey{
@@ -1013,4 +1030,17 @@ ul.imageicons-list  {
         overflow: hidden;
     }
 }
-
+@media (min-width: 576px) { 
+    .imageicons li.hey{
+        width: 20%;
+        font-size: 12px;
+    }
+    .imageicons {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .imageicons {
+        margin: 0 -10px 20px;
+        overflow: hidden;
+    }
+ }
