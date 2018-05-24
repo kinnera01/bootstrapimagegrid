@@ -17,18 +17,26 @@
 
 
     <body>
-        <div class="container-fluid.bs-docs-container">
+        
+        <div class="container.bs-docs-container">
           
             <div class="row">
-                
-                <div class="col-md-9 sm-9 sx-9 col-centered" role="main" id="maindiv">
+                <div class="col-md-12"role="main" id="maindiv">
+                        <div class="bs-docs-section">
+                                <div class="imageicons">
+                        <ul class="imageicons-list" id="icons">
+                        </ul>
+                        </div>
+                        </div>
+                </div>
+                <!-- <div class="col-md-12 col-centered" role="main" id="maindiv">
                         <div class="bs-docs-section">
                     <div class="imageicons">
                         <ul class="imageicons-list" id="icons">
                         </ul>
                     </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <script>
@@ -84,7 +92,7 @@
                 data.forEach(function (e) {
                     var divarea = $(".imageicons-list")
                     divarea.append(
-                        "<li class='hey'><span aria-hidden='true'><img class='url img-responsive' src=" +
+                        "<li class='hey col-sm-3 col-md-4 col-lg-5'><span aria-hidden='true'><img class='url img-responsive' src=" +
                         e.url + "></img></span><span class='glyphicon-class'>" + e.text +
                         "</span></li>")
                 })
