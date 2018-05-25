@@ -87,8 +87,8 @@ div {
     font-weight: 400;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    height: 28px;
-    width: 24px;
+    height: 40px;
+    width: 34px;
     margin-bottom: 10px;
     margin-top:5px;
 }
@@ -1010,7 +1010,7 @@ h2#bestFriendName{
 }
 @media (min-width: 992px) { 
 .imageicons li.hey{
-    width: 15%;
+    width: 18%;
     font-size: 12px;
 }
 .imageicons {
