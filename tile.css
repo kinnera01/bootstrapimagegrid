@@ -38,11 +38,11 @@ body {
     background-color: #fff;
     padding: 20px
 }
-li.hey{
+li.imgtile{
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.imageicons li.hey{
+.imageicons li.imgtile{
     float: left;
     width: 25%;
     height: 115px;
@@ -72,13 +72,13 @@ div {
     display: block;
 }
 
-.url .img {
+.tileimg .img {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 24px;
 }
 
-.url {
+.tileimg {
     position: relative;
     top: 1px;
     display: inline-block;
@@ -154,7 +154,7 @@ ul.imageicons-list  {
     margin-left: -5px;
     list-style: none
 } */
-h2#bestFriendName{
+h2#nameModal{
     word-wrap: break-word;
 }
 .col-centered {
@@ -167,7 +167,7 @@ h2#bestFriendName{
     text-align: center;
   
 }
-.list-inline>li.hey{
+.list-inline>li.imgtile{
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px
@@ -1002,14 +1002,14 @@ h2#bestFriendName{
         margin-left: 0
     }
 }  */
-#bestFriendImg{
+#imgModal{
     margin: 0 auto;
 }
-#bestFriendModal{
+#tileModal{
     font-family: 'Hind Siliguri', sans-serif;
 }
 @media (min-width: 992px) { 
-.imageicons li.hey{
+.imageicons li.imgtile{
     width: 18%;
     font-size: 12px;
 }
@@ -1023,7 +1023,7 @@ h2#bestFriendName{
 } }
 
 @media (min-width: 768px) {
-    .imageicons li.hey{
+    .imageicons li.imgtile{
         width: 12.5%;
         font-size: 12px;
     }
@@ -1037,7 +1037,7 @@ h2#bestFriendName{
     }
 }
 @media (min-width: 576px) { 
-    .imageicons li.hey{
+    .imageicons li.imgtile{
          width: 20%; 
         font-size: 12px;
       /* //  height:80px!important; */
